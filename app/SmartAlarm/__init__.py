@@ -1,0 +1,2 @@
+from SmartAlarmMain import SmartAlarmService
+
