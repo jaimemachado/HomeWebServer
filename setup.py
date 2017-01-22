@@ -7,5 +7,5 @@ setup(
     author='Jaime Machado',
     license='MIT',
     packages=['homenetwork'],
-    install_requires=['googlemaps', 'Flask', 'flask-classy', ]
+    install_requires=['googlemaps', 'Flask', 'flask-classy', 'blinker']
 )

@@ -1,6 +1,7 @@
-from app import app
+from multiprocessing import Process
+import time
 
-app.config.from_object('config');
 
 if __name__ == "__main__":
-    app.run(debug = app.config['DEBUG']);
+    from app import run_apps
+    run_apps()
