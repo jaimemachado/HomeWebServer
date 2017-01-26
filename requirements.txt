@@ -1,0 +1,4 @@
+googlemaps
+Flask
+flask-classy
+blinker

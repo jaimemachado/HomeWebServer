@@ -4,9 +4,8 @@ from app.Signals import restart_application2
 
 class ServerManagerService(FlaskView):
     route_base = '/servermanager/';
-    def restart(self):
-        restart_application2.send()
-        return "Oi";
+    def alive(self):
+        return "ALIVE";
 
 
 ServerManagerService.register(app);
