@@ -5,8 +5,8 @@ app = Flask(__name__)
 
 
 def initFlaskSecret(app):
-    googlePath = path.dirname(path.realpath(__file__))+ "\..\..\\flaskSecret.txt";
-    with open(googlePath) as f: s = f.read()
+    flaskSecret = path.dirname(path.realpath(__file__))+ "/../../flaskSecret.txt";
+    with open(flaskSecret) as f: s = f.read()
     app.config['SECRET_KEY'] = s;
 
 def run_apps():
